@@ -6,6 +6,9 @@ to colaborate on this file
 Next stages: Statistical Analysis, Visualization & Dashboard and  Recommendations & Presentation Lead
 
 
+
+
+
 # Historical Weather and Climate Variability in Kenya
 A data pipeline that fetches, assesses, and cleans 10 years of daily historical weather data across six Kenyan cities, producing a clean, analysis-ready dataset alongside a full data-quality report.
 
