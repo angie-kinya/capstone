@@ -96,7 +96,10 @@ No installation needed if running in **Google Colab** — all dependencies are p
 
 ## Notes / Troubleshooting
 
-- Re-running the packaging step (Step 6) after it has already run once will raise a `FileExistsError` on `shutil.copytree`, since `group3_outputs/data` already exists. Delete the `group3_outputs/` folder first, or add `dirs_exist_ok=True` / clear it programmatically before re-running.
+Pointers if you ran into any of below issues.
+
+- Re-running the packaging step (Step 6) after it has already run once will raise a `FileExistsError` on `shutil.copytree`, since `group3_outputs/data` already exists. id such happens Delete the `group3_outputs/` folder first, or add `dirs_exist_ok=True` / clear it programmatically before re-running.
+
 - If a cell references `df` or `cleaned_df` and raises a `NameError`, make sure the earlier "Run the pipeline" cell (Step 2) has been executed first — cells depend on variables created upstream, so running out of order will break later steps.
 
 ## Contributors
