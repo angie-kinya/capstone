@@ -1,0 +1,13 @@
+# The dashboard's palette was validated for colour-vision deficiency against a
+# light chart surface, so the app is pinned to the light theme to guarantee the
+# contrast and separation results hold for every viewer.
+[theme]
+base = "light"
+backgroundColor = "#f9f9f7"
+secondaryBackgroundColor = "#fcfcfb"
+textColor = "#0b0b0b"
+primaryColor = "#2a78d6"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false
