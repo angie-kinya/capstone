@@ -12,6 +12,31 @@ Next stages: Statistical Analysis, Visualization & Dashboard and  Recommendation
 # Historical Weather and Climate Variability in Kenya
 A data pipeline that fetches, assesses, and cleans 10 years of daily historical weather data across six Kenyan cities, producing a clean, analysis-ready dataset alongside a full data-quality report.
 
+---
+
+## Interactive Dashboard
+
+The visualisation deliverable is a Streamlit dashboard: **`dashboard.py`**
+
+```bash
+pip install -r requirements.txt
+streamlit run dashboard.py
+```
+
+It has one tab per research question (Q1–Q5), plus an executive summary with a clickable
+station map, a county deep dive for drill-down, and a Data & method tab documenting the API
+parameters, quality tests, cleaning rules and statistical techniques. Five KPI cards and
+17 interactive charts respond to five sidebar filters, and every chart carries an
+evidence sentence and a downloadable table of the figures behind it.
+
+It runs on a clean machine: if `data/cleaned/kenya_weather_cleaned.csv` is missing it falls
+back to `data/raw/*.json`, and if those are missing too it calls the Open-Meteo API itself
+and writes both.
+
+**Why each chart was chosen** — including the alternatives that were rejected, the
+colour-vision validation results and the anti-patterns deliberately avoided — is documented
+in [`VISUALIZATION_GUIDE.md`](VISUALIZATION_GUIDE.md).
+
 📓 **Notebook:** `Copy_of_Capstone_Project_Group_3.ipynb`
 ▶️ **Open in Colab:** [Insert your Google Drive/Colab link here]
 
